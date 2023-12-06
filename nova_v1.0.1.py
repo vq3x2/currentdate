@@ -15,17 +15,17 @@ with open(os.path.join("./version./version.txt"), "r") as version:
 
 
 
-banner = f"""{Fore.LIGHTBLUE_EX}
+# banner = f"""{Fore.LIGHTBLUE_EX}
 
 
-                                ███╗   ██╗ ██████╗ ██╗   ██╗ █████╗ 
-                                ████╗  ██║██╔═══██╗██║   ██║██╔══██╗
-                                ██╔██╗ ██║██║   ██║██║   ██║███████║     made by vq3x2
-                                ██║╚██╗██║██║   ██║╚██╗ ██╔╝██╔══██║     last updated: {date_en}                                ██║ ╚████║╚██████╔╝ ╚████╔╝ ██║  ██║
-                                ╚═╝  ╚═══╝ ╚═════╝   ╚═══╝  ╚═╝  ╚═╝
-                                """
+#                                 ███╗   ██╗ ██████╗ ██╗   ██╗ █████╗ 
+#                                 ████╗  ██║██╔═══██╗██║   ██║██╔══██╗
+#                                 ██╔██╗ ██║██║   ██║██║   ██║███████║     made by vq3x2
+#                                 ██║╚██╗██║██║   ██║╚██╗ ██╔╝██╔══██║     last updated: {date_en}                                ██║ ╚████║╚██████╔╝ ╚████╔╝ ██║  ██║
+#                                 ╚═╝  ╚═══╝ ╚═════╝   ╚═══╝  ╚═╝  ╚═╝
+#                                 """
 
-print(banner)
+# print(banner)
 
 leng = 16
 char = string.ascii_letters + string.digits
