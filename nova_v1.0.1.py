@@ -14,20 +14,37 @@ with open(os.path.join("./version./date.txt"), "r") as date:
 with open(os.path.join("./version./version.txt"), "r") as version:
     ver_en = version.readline()
 
+ver_en = ver_en.strip()
+
+# banner = f"""{Fore.LIGHTBLUE_EX}
 
 
-banner = f"""{Fore.LIGHTBLUE_EX}
+#                                 ███╗   ██╗ ██████╗ ██╗   ██╗ █████╗ 
+#                                 ████╗  ██║██╔═══██╗██║   ██║██╔══██╗
+#                                 ██╔██╗ ██║██║   ██║██║   ██║███████║     made by vq3x2
+#                                 ██║╚██╗██║██║   ██║╚██╗ ██╔╝██╔══██║     version: {ver_en}                                
+#                                 ██║ ╚████║╚██████╔╝ ╚████╔╝ ██║  ██║
+#                                 ╚═╝  ╚═══╝ ╚═════╝   ╚═══╝  ╚═╝  ╚═╝
+#                                 """
+
+# print(banner)
 
 
-                                ███╗   ██╗ ██████╗ ██╗   ██╗ █████╗ 
-                                ████╗  ██║██╔═══██╗██║   ██║██╔══██╗
-                                ██╔██╗ ██║██║   ██║██║   ██║███████║     made by vq3x2
-                                ██║╚██╗██║██║   ██║╚██╗ ██╔╝██╔══██║     version: {ver_en}                                
-                                ██║ ╚████║╚██████╔╝ ╚████╔╝ ██║  ██║
-                                ╚═╝  ╚═══╝ ╚═════╝   ╚═══╝  ╚═╝  ╚═╝
-                                """
 
-print(banner)
+def banner():
+    print(f"{Fore.LIGHTBLUE_EX}")
+
+    print()
+    print("                            ███╗   ██╗ ██████╗ ██╗   ██╗ █████╗")
+    print("                            ████╗  ██║██╔═══██╗██║   ██║██╔══██╗")
+    print("                            ██╔██╗ ██║██║   ██║██║   ██║███████║     made by vq3x2")
+    print(f"                            ██║╚██╗██║██║   ██║╚██╗ ██╔╝██╔══██║     version: {ver_en}")                                
+    print("                            ██║ ╚████║╚██████╔╝ ╚████╔╝ ██║  ██║")
+    print("                            ╚═╝  ╚═══╝ ╚═════╝   ╚═══╝  ╚═╝  ╚═╝")
+    print()
+
+
+banner()
 
 leng = 16
 char = string.ascii_letters + string.digits
@@ -86,11 +103,11 @@ while True:
         print()
         input(f"{Fore.LIGHTBLACK_EX}Checked {Fore.LIGHTRED_EX}{num-count}/{num} {Fore.LIGHTBLACK_EX}in {Fore.LIGHTRED_EX} {time.time()-t0:.2f} seconds {Fore.WHITE}| {Fore.LIGHTBLACK_EX}All codes saved in txt files")
         os.system("cls")
-        print(banner)
+        banner()
 
     except ValueError:
         print()
         print(f"{Fore.RED}[-] Error: {Fore.YELLOW}Please input an intiger")
         time.sleep(1)
         os.system("cls")
-        print(banner)
+        banner()
