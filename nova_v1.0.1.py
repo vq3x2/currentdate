@@ -16,18 +16,6 @@ with open(os.path.join("./version./version.txt"), "r") as version:
 
 ver_en = ver_en.strip()
 
-# banner = f"""{Fore.LIGHTBLUE_EX}
-
-
-#                                 ███╗   ██╗ ██████╗ ██╗   ██╗ █████╗ 
-#                                 ████╗  ██║██╔═══██╗██║   ██║██╔══██╗
-#                                 ██╔██╗ ██║██║   ██║██║   ██║███████║     made by vq3x2
-#                                 ██║╚██╗██║██║   ██║╚██╗ ██╔╝██╔══██║     version: {ver_en}                                
-#                                 ██║ ╚████║╚██████╔╝ ╚████╔╝ ██║  ██║
-#                                 ╚═╝  ╚═══╝ ╚═════╝   ╚═══╝  ╚═╝  ╚═╝
-#                                 """
-
-# print(banner)
 
 
 
